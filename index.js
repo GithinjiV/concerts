@@ -2,7 +2,7 @@
 const showList = document.querySelector(".showList");
 
 // Fetch the data from the API using the Fetch API
-fetch("http://127.0.0.1:5500/db.json")
+fetch("/db.json")
   .then((response) => response.json())
   .then((data) => {
     // Loop through the data and create a list item for each show
